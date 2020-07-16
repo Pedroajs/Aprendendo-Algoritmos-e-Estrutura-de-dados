@@ -1,0 +1,6 @@
+Estudo de pilhas
+    Há duas estruturas de dados que apresentam algumas semelhanças
+    com os arrays, mas que oferecem mais controle sobre a adição
+    e remoção de elementos
+
+Pilhas (stacks) & Filas (queues)
