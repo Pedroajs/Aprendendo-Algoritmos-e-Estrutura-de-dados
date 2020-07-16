@@ -22,4 +22,12 @@ class Stack{
       return  this.items.length;
     }
 }
+const stack = new Stack();
 
+stack.push(5);
+stack.push(8);
+stack.push(11);
+stack.push(15);
+stack.pop();
+stack.pop();
+console.log(stack.size());

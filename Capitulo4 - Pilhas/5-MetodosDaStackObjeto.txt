@@ -1,0 +1,65 @@
+class stack{
+    constructor(){
+        this.count = 0;
+        this.items = {};
+    }
+}
+MÉTODO PUSH
+push(element){
+    this.items[this.count] = element;
+    this.count++;
+}
+
+MÉTODO POP 
+como não é um array, o método deve ser implementado manualmente.
+o pop retira um elemento e também o devolve.
+
+pop(){
+    if(this.isEmpty()){ //{1}
+        return undefined;
+    }
+    this.count--; //{2}
+    const result = this.items[this.count]; //{3}
+    delete this.items[this.count]; //{4}
+    return result;{5}
+}
+
+{1} devemos verificar se a pilha está vazia, se sim retorna undefined.
+{2} se não estiver vazia diminuiremos a propriedade count.
+{3} e armazenaremos o valor do topo da pilha. para poder devolve-lo{5} 
+    depois que o elemento for removido{4}.
+
+Como estamos usando o JS usamos o operador DELETE
+
+MÉTODO isEmpty
+isEmpty(){
+        return this.count === 0;
+    }
+
+MÉTODO PEEK
+peek(){
+    if(this.isEmpty){
+        return undefined
+    }
+    return this.items[this.count - 1];
+}
+MÉTODO CLEAR
+para limpar a pilha basta reiniciá-la com os mesmos valores do construtor.
+
+clear(){
+    this.items = {};
+    this.count = 0;
+}
+
+MÉTODO SIZE
+size(){
+      return  this.count;
+    }
+
+IMPORTANTE
+também poderiamos usar a lógica a seguir para remover tosos os elementos
+e respeitar o LIFO
+
+while(!this.isEmpty()){
+    this.pop();
+}

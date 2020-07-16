@@ -1,0 +1,16 @@
+Na maioria dos métodos de uma pilha em array é ncessario iterar
+por todo o array até encontrar o elemento desejado. Se o array 
+tiver muitos elementos mais tempo demorará. Quanto mais elementos mais
+tempo de demora.
+Além disso, um array é um conjunto ordenado de elementos, e para mantê-los
+assim, seria necessário ter mais espaço na memória também.
+
+Criando uma pilha usando um objeto é possível acessar diretamente
+os elementos e usar menos espaço de memória. Também mantendo na ordem
+desejada e obedecendo ao LIFO.
+
+ver o arquivo stack.js
+
+a nova esturutura tem uma propriedade count que serve para ajudar
+a manter o controle do tamanho da pilha (e consequentemente, para nos ajudar
+também a adicionar e a remover elementos da esturutura de dados).

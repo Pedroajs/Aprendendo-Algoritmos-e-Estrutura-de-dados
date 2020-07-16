@@ -1,0 +1,28 @@
+Colocando métodos da pilha
+
+- Push
+- pop
+São os dois métodos responsaveis por colocar e tirar elementos.
+
+método peek
+ peek(){
+        return this.items[this.items.length - 1];
+    }
+esse método verifica quantos elementos tem um array e ao subtrair 1 
+temos o índice do ultimo elemento
+    0   1   2
+    81  72  100
+return this.items[this.items.length - 1] === 3 - 1 = 2 (o índice do ultimo elemento)
+
+Método isEmpty
+isEmpty(){
+        return this.items.length === 0;
+    }
+Retorna true se estiver vazio, false se cheio.
+
+Método clear
+
+clear(){
+        this.items = [];
+    }
+esvazia a pilha.

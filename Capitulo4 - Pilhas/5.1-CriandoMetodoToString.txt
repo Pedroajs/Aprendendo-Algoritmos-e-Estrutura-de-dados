@@ -1,0 +1,23 @@
+Para a versão de pilha em objeto é necessário criar uma função
+toString, para poder exibir um conteudo da pilha de modo semelhante
+ao array.
+
+
+toString(){
+    if(this.isEmpty()){
+        return '';
+    }
+    let objString = `${this.items[0]}`; //{1}
+    for(let i = 0; i < this.count; i++){ //{2}
+        objString = `${objString}, ${this.items[i]}`//{3}
+    }
+    return objString;
+}
+
+Se a pilha não estiver vazia, inicializamos a string com o primeiro
+elemento que está na base da pilha {1}
+Então faremos uma iteração por todas as chaves da pilha {2} até seu
+topo, adicionando uma vírgula(,) seguida pelo próximo elemento{3}
+
+Se a pilha tiver apenas um elemento o código das linhas {2} e {3}
+não será executado.
