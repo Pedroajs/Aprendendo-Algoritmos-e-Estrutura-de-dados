@@ -1,0 +1,16 @@
+Considere:
+
+const multipleOf13 = (element, index, array) =>{
+    return (element % 13 == 0);
+}
+
+console.log('valor', numbers.find(multipleOf13));
+console.log('índice', numbers.findIndex(multipleOf13));
+
+Esses dois métodos recebem uma função de callback, a qual buscará um valor
+que satisfaça a condição da função de teste(callback)
+
+O método find devolve o primeiro valor do array que satisfaça a condição.
+
+O método findIndex devolve o índice do primeiro valor do array que satisfaça
+a condição. Caso o valor não seja encontrado será devolvido undefined.

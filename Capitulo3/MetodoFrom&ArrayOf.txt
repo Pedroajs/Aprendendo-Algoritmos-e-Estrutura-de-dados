@@ -1,0 +1,20 @@
+MÉTODO FROM
+Cria outro array a partir de um array existente.
+
+let numbers2 = Array.from(numbers);
+
+Também é possível passar uma função para que possamos determinar quais valores mapear
+let evens = Array.from(numbers, x =>(x % 2 == 0)); 
+
+MÉTODO ARRAY.of
+Cria outro array a partir dos argumentos passados para o método.
+
+let numbers3 = Array.of(1); === numbers3 = [1];
+let numbers4 = Array.of(1, 2 ,3, 4, 5, 6);
+
+Também é possível usar o método para fazer uma cópia de um array existente.
+let numbersCopy  = Array.of(...numbers4);  é igual ao array.from, 
+                                           com a diferença de usar o spread operator.
+
+
+

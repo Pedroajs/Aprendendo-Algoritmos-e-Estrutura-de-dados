@@ -1,0 +1,8 @@
+TRABALHANDO COM TS
+O typeScript verifica e infere um tipo a variável automaticamente.
+
+Porém é recomendável atribuir tipo quando inicializamos uma variável sem atribuir um valor.
+
+let nome: string;
+
+Sem fazê-lo ela será automaticamente tipada como any.

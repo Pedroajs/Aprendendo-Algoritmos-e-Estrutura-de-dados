@@ -1,0 +1,27 @@
+ITERANDO PELOS ELEMENTOS DE ARRAYS BIDIMENSIONAIS
+
+É preciso criar uma função genérica:
+
+function printMatrix(myMatrix){
+    for(let i = 0; i < myMatrix.length; i++){
+        for(let j = 0; j < myMatrix[i].length; j++){
+            console.log(myMatrix[i][j]);
+        }
+    }
+}
+
+É necessário percorrer todas as linhas e colunas com um laço.Para isso, 
+usa-se um laço for aninhado, em que a variável i representa as linhas e
+j representa as colunas. Nesse caso, cada myMatrix[i] tb representa um
+array e, desse modo, também precisamos iterar pelas posições dela no laço
+for aninhado.
+
+function printMatrix(myMatrix){
+    for(let i = 0; i < myMatrix.length; i++){
+        for(let j = 0; j < myMatrix[i].length; j++){
+            for(z = 0; z  < myMatrix.length[i][j]; z++){
+                console.log(myMatrix[i][j][z]);
+            }
+        }
+    }
+}

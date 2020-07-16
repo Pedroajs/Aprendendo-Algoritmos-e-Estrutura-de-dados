@@ -1,0 +1,11 @@
+O método includes devolve true se um elemento é encontrado no array
+e false caso contrário.
+
+ex: console.log(numbers.includes(15));
+    console.log(numbers.includes(20));
+
+Também é possível passar um índice de ínicio a partir do qual queremos que
+o array faça a pesquisa do valor:
+
+let numbers2 = [7, 6, 5, 4, 3, 2, 1];
+console.log(numbers2.includes(4, 5)); procura o elemento 4 na posição 5

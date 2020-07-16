@@ -1,0 +1,33 @@
+DESTRUTURAÇÃO DE ARRAYS - maneira de inicializar variáveis de uma só vez.
+ex.:
+
+let [x, y] = ['a', 'b']; === let x = a; let y = b;
+
+Também pode ser usada para trocar valores (fazer swap) de uma só vez, sem a necessidade
+de criar variáveis temp.
+ex.:
+
+[x, y] = [y, x] === var temp x;
+                    x = y;
+                    y = temp;
+
+Muito útil para usar com algoritmos de ordenação.
+
+ABREVIAÇÃO DE PROPRIEDADES (property shorthand) - outro maneira de executar 
+a destruturação de objetos.
+ex.:
+
+let [x, y] = ['a', 'b'];                 
+let obj = {x, y};
+console.log(obj) // {x: 'a', y:'b'}
+
+NOMES DE MÉTODO ABREVIADO(shorthand method names)- permite declarar funções 
+dentro de objetos como se fossem propriedades.
+
+const hello = {
+    name: 'abc',
+    printHello(){
+        console.log('hello');
+    }
+};
+console.log(hello.printHello());

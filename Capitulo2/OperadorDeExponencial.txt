@@ -1,0 +1,12 @@
+Pode ser conveniente quando trabalhando com matemática.
+
+const area = 3.14 * r * r; === const area = 3.14 * Math.pow(r, 2);
+
+A ES2016 trouze o operador ** para ser o novo operador exponencial.
+ex.:
+
+const area = 3.14 * (r ** 2);
+
+const r = 2;
+
+console.log(area);

@@ -1,0 +1,11 @@
+import * as area from ".js"
+
+Dessa forma óe possivel importar o modulo todo como uma única variável e chamar 
+os membros exportados como se fossem atributos ou métodos de uma classe.
+
+area.squareArea;
+area.circleArea;
+
+Se o módulo for de membro único não é necessário usar chaves.
+
+import book from "./book.js";

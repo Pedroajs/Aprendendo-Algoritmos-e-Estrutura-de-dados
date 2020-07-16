@@ -1,0 +1,23 @@
+USANDO MAP E FILTER
+esses dois iteradores devolvem um novo array como resultado.
+
+const myMap = meuArray.map(isEven);
+
+MAP traz um array com o resultado da função
+
+FILTER devolve um array com os elementos para os quais a função devolveu true.
+
+const evenNums = meuArray.filter(isEven);
+
+USANDO O MÉTODO REDUCE
+o método reduce recebe uma função com os seguintes parametros:
+    - previousValue
+    - currentValue
+    - index
+    - array
+Os parametros index e array são opcionais, não é necessário passá-los caso não sejam usados.
+
+Podemos usar essa função para devolver um valor que será somado a um acumulador, o qual será
+devolvido depois que o método reduce parar de executar.
+
+meuArray.reduce((previous, current) => previous + current);

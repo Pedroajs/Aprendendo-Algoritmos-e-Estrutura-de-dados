@@ -1,0 +1,4 @@
+TypeScript: superconjunto gradualmente tipado de javaScript.
+Principais recursos:
+    - possibilidade de usar tipagem em variáveis.
+        o que permite verificação estática, facilitando refatorar o codigo e encontrar bugs

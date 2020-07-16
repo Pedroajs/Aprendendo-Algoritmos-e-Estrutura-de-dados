@@ -1,0 +1,38 @@
+Objetos em JS: coleções bem simples de pares nome-valor.
+
+Criando objetos:
+var obj   new Object();
+var obj = {}
+
+ou um objeto completo:
+
+obj = {
+    name : {
+        fist: 'gandald',
+        last: 'the grey'
+    },
+    address: 'Middle Earth'
+};
+
+Em POO um objeto é uma instância de uma classe.
+
+LET E CONST NO LUGAR DE VAR 
+
+const = tem comportamento igual a let, porém somente para leitura
+
+ARROW FUNCTION
+
+var circleAreaES5 = function(r){
+    var PI = 3.14;
+    var area = PI * r * r;
+    return area;
+}
+
+var circleArea = r =>{
+    var PI = 3.14;
+    var area = PI * r * r;
+    return area;
+}
+           OU
+var circleArea = r => 3.14 * r * r; se for apenas uma instruçao
+

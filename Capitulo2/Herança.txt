@@ -1,0 +1,13 @@
+class ITBook extends Book{
+    constructor(titulo, autor, isbn, tecnologia){
+        super(titulo, autor, isbn);
+        this.tecnologia = tecnologia;
+    }
+
+    printTecnologia(){
+        console.log(this.tecnologia);
+    }
+}
+
+É possível extender propriedades de uma classe para outra usando o extends.
+É necessário usar o objeto super() dentro do constructor.s

@@ -1,0 +1,17 @@
+ITERANDO COM O LAÇO for...of
+
+for(const n of numbers){
+    console.log(n % 2 === 0 ? 'even' :  'odd');
+}
+
+USANDO O OBJETO @@ITERATOR
+Para usá-la, é necessário acessar a propriedade Symbol.iterator:
+
+let iterator = numbers[Symbol.iterator](); 
+é necessário chamar cada elemento por vez ou fazer um laço de repetição
+
+iterator = numbers[Symbol.iterator]();
+
+for (const n of iterator){
+    console.log(n);
+}

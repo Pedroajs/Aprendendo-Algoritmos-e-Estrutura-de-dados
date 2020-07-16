@@ -1,0 +1,16 @@
+Em TS há dois conceitos de interfaces. 
+O primeiro está relacionado à atribuição de um tipo a uma variável
+ex.:
+
+interface Person{
+    name: string;
+    age: number;
+}
+function printName(person: Person){
+    console.log(person.name);
+}
+
+O primeiro conceito é: Um interface deve existir. É uma decrição de atributos e de métodos
+que um objeto deve ter.
+
+O segundo conceito está relacionado a POO.

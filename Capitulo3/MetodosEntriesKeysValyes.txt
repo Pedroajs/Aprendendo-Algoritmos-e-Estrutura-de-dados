@@ -1,0 +1,28 @@
+MÉTODOS ENTRIES, KEYS E VALUES
+
+MÉTODO ENTRIES
+Entries devolve @@iterator, que contém pares chave/valor.
+
+let aEntreies = numbers.entries(); obtem um iterador de chave/valor
+
+console.log(aEntreies.netxt().value); [0,1] - posição 0, valor 1
+
+key é a posição do array e value o valor armazenado naquele índice.
+
+Alternativa para iterar todos de uma vez
+for(const n of aEntreies){
+    console.log(n);
+}
+Esse método será conveniente ao estudar conjuntos, dicionário e mapas hash.
+
+MÉTODO KEY
+devolve o @@iterator, que contém as chaves do array.
+
+const aKey = numbers.keys(); obtém um iterador de chaves.
+
+console.log(aKeys.next()); {value: 0, done: false} se done for false significa que há mais chaves para iterar
+
+MÉTODO VALUES
+devove @@iterator, que contém os valores do array.
+const aValues = numbers.values();
+console.log(aValues.next()); {value: 1, done: false};

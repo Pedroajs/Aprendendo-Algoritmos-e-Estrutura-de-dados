@@ -1,0 +1,42 @@
+JUNTANDO VÁRIOS ARRAYS
+Método concat
+
+const zero = 0;
+const positiveNums = [1, 2 ,3 ];
+const negativeNums = [-3,-2, -1];
+
+let numbers = negativeNums.concat(zero, positiveNums);
+console.log(numbers);
+
+Os arrays serão concatenados no array especificado na ordem 
+em que os argumentos forem passados para o método.
+
+FUNÇÕES DE ITERAÇÃO
+
+funtion  isEven(x){
+    //devolve true se x for multiplo de 2.
+    console.log(x);
+    return x % 2 === 0 ? true : false;
+}
+
+Usando a sintaxe da ES2015 podemos reescrever a função isEven assim:
+
+const isEven = x => x % 2 === 0;
+
+const meuArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 13, 14, 15];
+
+ITERANDO COM O MÉTODO EVERY
+Esse método itera pelos elementos do array até que a função devolva false. E so faz isso 1 vez. Assim:
+
+meuArray.every(isEven);
+
+ITERANDO COM METODO SOME.
+Tem um comportamento oposto ao método every. No entanto esse método itera pelos elementos do array
+até que a função devolva true.
+
+meuArray.some(isEven);
+
+ITERANDO COM ForEach
+o resultado é o mesmo que um laço for
+numbers.ForEach(x => console.log(x % 2 === 0));
+Nesse caso ele avalia cada numero e diz se é true ou false.

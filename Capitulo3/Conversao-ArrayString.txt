@@ -1,0 +1,13 @@
+MÉTODOS toString e join
+
+Para exibir tosos os elementos do array em uma string:
+console.log(numbers.toString());
+
+Para separar os elementos com um seprador diferente, por ex o -, o método 
+join poderá ser usado:
+
+const numbersString = numbers.join('-');
+console.log(numbersString);
+
+É útil se precisarmos enviar o conteúdo do array para um servidor ou 
+se esse conteudo tiver de ser decodificado.

@@ -1,0 +1,35 @@
+let numbers = [0,1,2,3,4,5,6,7,8,9];
+
+Para acrescentar um novo dado no FINAL do array
+numbers[numbers.length] = 10; === numbers.push(10);
+
+ADICIONANDO ELEMENTOS NA PRIMEIRA POSIÇÃO do array
+
+Array.prototype.insertFirstPosition = (value) =>{
+    for(let i = this.length; i >=0; i--){
+        this[i] = this[i - 1];
+    }
+    this[0] = value;
+}
+numbers.insertFirstPosition(-1)
+USANDO O MÉTODO UNSHIFT
+numbers.unshift(-1) === numbers.insertFirstPosition(-1)
+
+REMOVENDO ELEMENTOS
+
+Removendo elementos do final de um array(método pop)
+numbers.pop()
+
+Removendo elementos da primeira posição (método shift)
+numbers.shift();
+
+ADICIONANDO E REMOVENDO ELEMENTOS DE UMA POSIÇÃO ESPECÍFICA
+
+método SPLICE = remove um elemento passando sua posição.
+numbers.splice(5,3) = elimina 3 números a partir da 5 posição
+
+inserindo numeros de volta a partir da posição 5:
+numeros.splice(5, 0, 2, 3, 4) 
+    - O 1º argumento do método é o índice a partir do qual se remove ou insere ELEMENTOS
+    - O 2º argumento é a quantidade de elementos a remover (no exemplo é 0 pois nao se quer remover nenhum)
+    - O 3º em diante são os valores a serem inseridos.

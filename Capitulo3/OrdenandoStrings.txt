@@ -1,0 +1,30 @@
+
+let names = ['Ana','ana', 'john', 'John'];
+console.log(names.sort());
+
+saída: ['Ana', 'John', 'ana', 'john']
+Não foi ordenado em ordem alfabética pois o JS compara os caracteres 
+de acordo com seu valor ASCII.
+Exemplo: A, J, a, j têm os seguintes valors:
+    A:65, J:74, a:97, j:106
+
+Passando uma função para ignorar a diferença entre letras maiúsculas e minúsculas
+
+names = ['Ana','ana', 'john', 'John'];
+console.log(names.sort((a, b) => {
+    if(a.toLowerCase() < b.toLowerCase){
+        return -1;
+    }
+    if(a.toLowerCase() > b.toLowerCase){
+        return 1;
+    }
+    return 0;
+}))
+
+Nesse caso não vai adiantar em nada.
+
+Se quisermos que as letras minúsculas venham antes no array ordenado, 
+é preciso usar o método localeCompare:
+
+names.sort((a, b) => a.localeCompare(b));
+o resultado será: ['ana', 'Ana', 'john', 'John']

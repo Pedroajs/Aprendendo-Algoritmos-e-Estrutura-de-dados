@@ -1,0 +1,21 @@
+ARRAYS BIDIMENSIONAIS
+
+let averageTempDay1 = [72, 75, 79, 79, 81, 81];
+
+let averageTempDay2  [81, 79, 75, 75, 73, 72];
+
+Um array bidimensional é uma matriz (ou um array de arrays)
+Cria-se um array no qual cada linha representa o dia e cada coluna 
+representa a medida da temperatura
+
+let averageTemp = [];
+ averageTemp[0] = [72, 75, 79, 79, 81, 81];
+ averageTemp[1] = [81, 79, 75, 75, 73, 72];
+
+ Representação desse array em diagrama:
+
+         h0  h1  h2  h3  h4  h5
+  dia1  [72, 75, 79, 79, 81, 81];
+  dia2  [81, 79, 75, 75, 73, 72];
+
+
