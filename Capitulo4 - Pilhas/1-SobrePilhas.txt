@@ -4,3 +4,14 @@ Estudo de pilhas
     e remoção de elementos
 
 Pilhas (stacks) & Filas (queues)
+
+Pilha é uma coleção ordenada de itens que obedece o princípio LIFO
+(Last In First Out)
+
+O final da pilha é chamado de topo, enquanto o lado oposto é a base.
+Os elementos mais novos ficam mais próximos ao topo, e os mais velhos
+a base.
+
+Uma pilha também é usada pelos compiladores em linguagens de programação,
+pela memória do computador para armazenar variáveis e chamadas de métodos,
+também pelo histórico do navegador.
